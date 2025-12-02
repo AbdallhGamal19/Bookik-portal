@@ -1,0 +1,81 @@
+---
+alwaysApply: true
+---
+
+
+# Project Instructions for Cursor AI
+
+## 🚫 Coding Rules - STRICTLY FORBIDDEN
+
+- ❌ **NEVER use TypeScript interfaces** - Remove all existing interfaces
+- ❌ **NO type guards or strict types**
+- ❌ **NO complex type definitions**
+- ❌ **NO interface imports or exports**
+- ❌ **Dont Update LoginServices Or Auth Context Until you ask me**
+
+## ✅ Required Approach
+
+- ✅ **ALWAYS use `any` or `unknown` types** for all variables, parameters, and return types
+- ✅ **Keep code simple and easily modifiable** without TypeScript constraints
+- ✅ **Use loose typing** for maximum flexibility
+- ✅ **Replace all interfaces with `any` types**
+
+## 🎨 Style Guidelines
+
+- **Use existing project design patterns** and Tailwind CSS classes
+- **Maintain consistent file structure** with the current project
+- **Follow Arabic RTL layout** patterns where applicable
+- **Use existing component patterns** from the project
+
+## 🔧 Implementation Examples
+
+### ❌ WRONG - Don't do this:
+```typescript
+interface IUser {
+  id: string;
+  name: string;
+}
+
+const user: IUser = { id: "1", name: "John" };
+```
+
+### ✅ CORRECT - Always do this:
+```typescript
+const user: any = { id: "1", name: "John" };
+// or
+const user: any = { id: "1", name: "John" };
+```
+
+### ❌ WRONG - Don't do this:
+```typescript
+function getUser(id: string): IUser { ... }
+```
+
+### ✅ CORRECT - Always do this:
+```typescript
+function getUser(id: any): any { ... }
+```
+
+## 📁 Files to Update
+
+- **interface/index.ts** - Remove all interfaces, replace with `any` types
+- **All component files** - Replace interface imports with `any` types
+- **Service files** - Use `any` for all parameters and return types
+- **Hook files** - Use `any` for all types
+
+## 🎯 Priority Actions
+
+1. **Remove all interface files** from the project
+2. **Replace interface imports** with `any` types
+3. **Update all function signatures** to use `any`
+4. **Simplify type definitions** throughout the codebase
+5. **Maintain functionality** while removing type constraints
+
+## 📝 Notes
+
+- This project prioritizes **simplicity and flexibility** over type safety
+- **Code should be easily modifiable** without interface constraints
+- **Focus on functionality** rather than strict typing
+- **Use existing patterns** from the current codebase
+
+---

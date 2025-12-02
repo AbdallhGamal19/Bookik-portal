@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme System */
+@import url("./themes.css");
+
+/* منع الاسكرول أثناء loading */
+body.loading {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+@layer utilities {
+  .full-height-minus-header {
+    @apply h-[calc(100vh-107px)] md:h-[calc(100vh-72px)];
+  }
+
+  /* Line clamp utilities */
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Global */
+  @media (max-width: 768px) {
+    .hide-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+.bg-bookik {
+  background: linear-gradient(90deg, #6a0572 0%, #9a2b7b 100%);
+}
+
+/* Bookik Select Menu Styles */
+select.bookik-select {
+  background-color: var(--theme-bg-card);
+  color: var(--theme-text-primary);
+}
+
+select.bookik-select option {
+  background-color: var(--theme-bg-card);
+  color: var(--theme-text-primary);
+  padding: 0.75rem 1rem;
+}
+
+select.bookik-select option:hover,
+select.bookik-select option:focus,
+select.bookik-select option:checked {
+  background: linear-gradient(90deg, #6a0572 0%, #9a2b7b 100%);
+  color: white;
+}

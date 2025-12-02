@@ -1,0 +1,285 @@
+/* Theme Variables */
+:root {
+  /* Light Theme (Default) */
+  --theme-bg-primary: #ffffff;
+  --theme-bg-secondary: #f8fafc;
+  --theme-bg-tertiary: #f1f5f9;
+  --theme-bg-card: #ffffff;
+  --theme-bg-overlay: rgba(0, 0, 0, 0.1);
+  --theme-bg-input: #ffffff;
+  --theme-bg-button: #f8fafc;
+  --theme-bg-hover: #c98bb8; /* New hover color for sidebar elements */
+  --theme-bg-active: #cbd5e1; /* Old active color for sidebar elements */
+  --theme-bg-disabled: #f1f5f9;
+  --theme-bg-success: #f0fdf4;
+  --theme-bg-warning: #fffbeb;
+  --theme-bg-error: #fef2f2;
+  --theme-bg-info: #eff6ff;
+
+  --theme-text-primary: #1e293b;
+  --theme-text-secondary: #475569;
+  --theme-text-tertiary: #64748b;
+  --theme-text-muted: #94a3b8;
+  --theme-text-disabled: #cbd5e1;
+  --theme-text-success: #065f46;
+  --theme-text-warning: #92400e;
+  --theme-text-error: #991b1b;
+  --theme-text-info: #1e40af;
+  --theme-text-link: #2563eb;
+  --theme-text-inverse: #ffffff;
+
+  --theme-border-primary: #e2e8f0;
+  --theme-border-secondary: #cbd5e1;
+  --theme-border-accent: #3b82f6;
+  --theme-border-focus: #3b82f6;
+  --theme-border-error: #f87171;
+  --theme-border-success: #34d399;
+  --theme-border-warning: #fbbf24;
+  --theme-border-disabled: #e2e8f0;
+
+  --theme-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --theme-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --theme-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --theme-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --theme-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  --theme-accent-primary: #a73a93; /* Bookik Primary */
+  --theme-accent-secondary: #4e2549; /* Bookik Secondary */
+  --theme-accent-success: #10b981;
+  --theme-accent-warning: #f59e0b;
+  --theme-accent-error: #ef4444;
+  --theme-accent-info: #3b82f6;
+  --theme-accent-purple: #8b5cf6;
+  --theme-accent-pink: #ec4899;
+  --theme-accent-indigo: #6366f1;
+  --theme-accent-teal: #14b8a6;
+  --theme-accent-orange: #f97316;
+  --theme-accent-rose: #f43f5e;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --theme-bg-primary: #0f172a;
+  --theme-bg-secondary: #1e293b;
+  --theme-bg-tertiary: #334155;
+  --theme-bg-card: #1e293b;
+  --theme-bg-overlay: rgba(255, 255, 255, 0.1);
+  --theme-bg-input: #1e293b;
+  --theme-bg-button: #334155;
+  --theme-bg-hover: #475569;
+  --theme-bg-active: #64748b;
+  --theme-bg-disabled: #334155;
+  --theme-bg-success: #064e3b;
+  --theme-bg-warning: #451a03;
+  --theme-bg-error: #450a0a;
+  --theme-bg-info: #0c4a6e;
+
+  --theme-text-primary: #f8fafc;
+  --theme-text-secondary: #e2e8f0;
+  --theme-text-tertiary: #cbd5e1;
+  --theme-text-muted: #94a3b8;
+  --theme-text-disabled: #64748b;
+  --theme-text-success: #6ee7b7;
+  --theme-text-warning: #fcd34d;
+  --theme-text-error: #fca5a5;
+  --theme-text-info: #7dd3fc;
+  --theme-text-link: #60a5fa;
+  --theme-text-inverse: #ffffff;
+
+  --theme-border-primary: #334155;
+  --theme-border-secondary: #475569;
+  --theme-border-accent: #60a5fa;
+  --theme-border-focus: #60a5fa;
+  --theme-border-error: #f87171;
+  --theme-border-success: #34d399;
+  --theme-border-warning: #fbbf24;
+  --theme-border-disabled: #475569;
+
+  --theme-shadow-sm: 0 1px 2px 0 rgba(255, 255, 255, 0.05);
+  --theme-shadow-md: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+  --theme-shadow-lg: 0 10px 15px -3px rgba(255, 255, 255, 0.1);
+  --theme-shadow-xl: 0 20px 25px -5px rgba(255, 255, 255, 0.1);
+  --theme-shadow-2xl: 0 25px 50px -12px rgba(255, 255, 255, 0.25);
+
+  --theme-accent-primary: #a73a93; /* Bookik Primary - Same as Light */
+  --theme-accent-secondary: #4e2549; /* Bookik Secondary - Same as Light */
+  --theme-accent-success: #34d399;
+  --theme-accent-warning: #fbbf24;
+  --theme-accent-error: #f87171;
+  --theme-accent-info: #60a5fa;
+  --theme-accent-purple: #a78bfa;
+  --theme-accent-pink: #f472b6;
+  --theme-accent-indigo: #818cf8;
+  --theme-accent-teal: #5eead4;
+  --theme-accent-orange: #fb923c;
+  --theme-accent-rose: #fb7185;
+}
+
+/* National Day Theme - Light (Saudi Arabia) - Eye-friendly Dark Green Colors */
+[data-theme="national-day-light"] {
+  --theme-bg-primary: #f0f9f0; /* Very light dark green tint */
+  --theme-bg-secondary: #e0f3e0; /* Light dark green */
+  --theme-bg-tertiary: #c8e8c8; /* Medium light dark green */
+  --theme-bg-card: #ffffff;
+  --theme-bg-overlay: rgba(0, 84, 48, 0.08); /* Dark green overlay */
+  --theme-bg-input: #f0f9f0; /* Very light dark green tint */
+  --theme-bg-button: #e0f3e0; /* Light dark green */
+  --theme-bg-hover: #c8e8c8; /* Medium light dark green */
+  --theme-bg-active: #a8d8a8; /* Medium dark green */
+  --theme-bg-disabled: #e0f3e0; /* Light dark green */
+  --theme-bg-success: #c8e8c8; /* Medium light dark green success */
+  --theme-bg-warning: #fef3c7; /* Soft yellow warning */
+  --theme-bg-error: #fee2e2; /* Soft red error */
+  --theme-bg-info: #dbeafe; /* Soft blue info */
+
+  --theme-text-primary: #003d22; /* Very dark green */
+  --theme-text-secondary: #005430; /* Dark green */
+  --theme-text-tertiary: #006b3d; /* Medium dark green */
+  --theme-text-muted: #00804a; /* Medium green */
+  --theme-text-disabled: #009557; /* Light green */
+  --theme-text-success: #005430; /* Dark green success */
+  --theme-text-warning: #92400e; /* Dark orange warning */
+  --theme-text-error: #991b1b; /* Dark red error */
+  --theme-text-info: #1e40af; /* Dark blue info */
+  --theme-text-link: #00804a; /* Medium green link */
+  --theme-text-inverse: #ffffff;
+
+  --theme-border-primary: #00804a; /* Medium green border */
+  --theme-border-secondary: #009557; /* Light green border */
+  --theme-border-accent: #22c55e; /* Saudi Green accent border */
+  --theme-border-focus: #00804a; /* Medium green focus border */
+  --theme-border-error: #f87171;
+  --theme-border-success: #00804a; /* Medium green success border */
+  --theme-border-warning: #f59e0b;
+  --theme-border-disabled: #009557; /* Light green disabled border */
+
+  --theme-shadow-sm: 0 1px 2px 0 rgba(0, 84, 48, 0.05);
+  --theme-shadow-md: 0 4px 6px -1px rgba(0, 84, 48, 0.1);
+  --theme-shadow-lg: 0 10px 15px -3px rgba(0, 84, 48, 0.1);
+  --theme-shadow-xl: 0 20px 25px -5px rgba(0, 84, 48, 0.1);
+  --theme-shadow-2xl: 0 25px 50px -12px rgba(0, 84, 48, 0.25);
+
+  --theme-accent-primary: #005430; /* Dark Green Primary - National Day Theme */
+  --theme-accent-secondary: #003d22; /* Darker Green Secondary */
+  --theme-accent-success: #00804a; /* Medium green success */
+  --theme-accent-warning: #f59e0b; /* Orange warning */
+  --theme-accent-error: #ef4444; /* Red error */
+  --theme-accent-info: #3b82f6; /* Blue info */
+  --theme-accent-purple: #8b5cf6; /* Purple accent */
+  --theme-accent-pink: #ec4899; /* Pink accent */
+  --theme-accent-indigo: #6366f1; /* Indigo accent */
+  --theme-accent-teal: #14b8a6; /* Teal accent */
+  --theme-accent-orange: #f97316; /* Orange accent */
+  --theme-accent-rose: #f43f5e; /* Rose accent */
+}
+
+/* National Day Theme - Dark (Saudi Arabia) - Eye-friendly Dark Green Colors */
+[data-theme="national-day-dark"] {
+  --theme-bg-primary: #001a0f; /* Very dark green */
+  --theme-bg-secondary: #002d1a; /* Dark green */
+  --theme-bg-tertiary: #004025; /* Medium dark green */
+  --theme-bg-card: #002d1a; /* Dark green card background */
+  --theme-bg-overlay: rgba(0, 84, 48, 0.3); /* Dark green overlay */
+  --theme-bg-input: #004025; /* Medium dark green input background */
+  --theme-bg-button: #005430; /* Dark green button background */
+  --theme-bg-hover: #003d22; /* Darker green on hover */
+  --theme-bg-active: #002d1a; /* Even darker green when active */
+  --theme-bg-disabled: #004025; /* Dark disabled background */
+  --theme-bg-success: #003d22; /* Dark green success */
+  --theme-bg-warning: #92400e; /* Dark orange warning */
+  --theme-bg-error: #991b1b; /* Dark red error */
+  --theme-bg-info: #1e40af; /* Dark blue info */
+
+  --theme-text-primary: #f0f9f0; /* Very light green text */
+  --theme-text-secondary: #e0f3e0; /* Light green text */
+  --theme-text-tertiary: #c8e8c8; /* Light green text */
+  --theme-text-muted: #a8d8a8; /* Medium green muted text */
+  --theme-text-disabled: #88c888; /* Medium dark green disabled text */
+  --theme-text-success: #a8d8a8; /* Medium green success text */
+  --theme-text-warning: #fef3c7; /* Light yellow warning text */
+  --theme-text-error: #fee2e2; /* Light red error text */
+  --theme-text-info: #dbeafe; /* Light blue info text */
+  --theme-text-link: #a8d8a8; /* Medium green link text */
+  --theme-text-inverse: #ffffff; /* White text for better contrast on dark green */
+
+  --theme-border-primary: #005430; /* Dark green border */
+  --theme-border-secondary: #00804a; /* Medium green border */
+  --theme-border-accent: #22c55e; /* Saudi Green accent border */
+  --theme-border-focus: #a8d8a8; /* Medium green focus border */
+  --theme-border-error: #f87171;
+  --theme-border-success: #00804a; /* Medium green success border */
+  --theme-border-warning: #f59e0b;
+  --theme-border-disabled: #88c888; /* Medium dark green disabled border */
+
+  --theme-shadow-sm: 0 1px 2px 0 rgba(0, 84, 48, 0.4);
+  --theme-shadow-md: 0 4px 6px -1px rgba(0, 84, 48, 0.5);
+  --theme-shadow-lg: 0 10px 15px -3px rgba(0, 84, 48, 0.6);
+  --theme-shadow-xl: 0 20px 25px -5px rgba(0, 84, 48, 0.7);
+  --theme-shadow-2xl: 0 25px 50px -12px rgba(0, 84, 48, 0.8);
+
+  --theme-accent-primary: #005430; /* Dark Green Primary - National Day Theme */
+  --theme-accent-secondary: #003d22; /* Darker Green Secondary */
+  --theme-accent-success: #00804a; /* Medium green success */
+  --theme-accent-warning: #f59e0b; /* Orange warning */
+  --theme-accent-error: #ef4444; /* Red error */
+  --theme-accent-info: #3b82f6; /* Blue info */
+  --theme-accent-purple: #8b5cf6; /* Purple accent */
+  --theme-accent-pink: #ec4899; /* Pink accent */
+  --theme-accent-indigo: #6366f1; /* Indigo accent */
+  --theme-accent-teal: #14b8a6; /* Teal accent */
+  --theme-accent-orange: #f97316; /* Orange accent */
+  --theme-accent-rose: #f43f5e; /* Rose accent */
+}
+
+/* Theme Transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Theme-specific utility classes */
+.theme-bg-primary {
+  background-color: var(--theme-bg-primary);
+}
+.theme-bg-secondary {
+  background-color: var(--theme-bg-secondary);
+}
+.theme-bg-tertiary {
+  background-color: var(--theme-bg-tertiary);
+}
+.theme-bg-card {
+  background-color: var(--theme-bg-card);
+}
+
+.theme-text-primary {
+  color: var(--theme-text-primary);
+}
+.theme-text-secondary {
+  color: var(--theme-text-secondary);
+}
+.theme-text-tertiary {
+  color: var(--theme-text-tertiary);
+}
+.theme-text-muted {
+  color: var(--theme-text-muted);
+}
+
+.theme-border-primary {
+  border-color: var(--theme-border-primary);
+}
+.theme-border-secondary {
+  border-color: var(--theme-border-secondary);
+}
+.theme-border-accent {
+  border-color: var(--theme-border-accent);
+}
+
+.theme-shadow-sm {
+  box-shadow: var(--theme-shadow-sm);
+}
+.theme-shadow-md {
+  box-shadow: var(--theme-shadow-md);
+}
+.theme-shadow-lg {
+  box-shadow: var(--theme-shadow-lg);
+}
