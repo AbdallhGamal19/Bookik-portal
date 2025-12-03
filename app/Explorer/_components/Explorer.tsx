@@ -1,16 +1,5 @@
 "use client";
-
-import Button from "@/components/ui/Button";
-
-import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import {
-  FaCommentDots,
-  FaHeart,
-  FaVolumeMute,
-  FaVolumeUp,
-} from "react-icons/fa";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
