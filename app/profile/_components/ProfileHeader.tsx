@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import { AiOutlineStock } from "react-icons/ai";
 import { BiPencil } from "react-icons/bi";
 import { FaBullhorn } from "react-icons/fa";

@@ -1,6 +1,6 @@
 "use client";
 import LazyVideo from "@/components/common/LazyVideo";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import { FaPlay } from "react-icons/fa";
 import { formatDistanceToNow } from "date-fns";
 import { ar } from "date-fns/locale";

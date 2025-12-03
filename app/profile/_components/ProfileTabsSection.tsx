@@ -3,7 +3,7 @@
 import SimpleItemCard from "./SimpleItemCard";
 import { FaUsers, FaBullhorn } from "react-icons/fa";
 import { useRouter } from "next/navigation";
-import Button from "../../../components/ui/Button";
+import Button from "../../../components/ui/button";
 
 interface ProfileTabsSectionProps {
   activeTab: "followers" | "followings" | "stores";

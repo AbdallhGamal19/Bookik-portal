@@ -4,7 +4,7 @@ import { useAppContext } from "@/context/appContext";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FiDatabase, FiHome, FiLogOut, FiSearch, FiUser } from "react-icons/fi";
-import Button from "../../components/ui/Button";
+import Button from "../../components/ui/button";
 
 const Footer = () => {
   const router = useRouter();

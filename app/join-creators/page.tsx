@@ -15,7 +15,7 @@ import {
 } from "react-icons/md";
 import { toast, ToastContainer } from "react-toastify";
 import * as Yup from "yup";
-import Button from "../../components/ui/Button";
+import Button from "../../components/ui/button";
 
 const JoinCreatorsPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

@@ -4,7 +4,8 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { FiAlertTriangle, FiHome, FiRefreshCw } from "react-icons/fi";
-import Button from "@/components/ui/Button";
+import Button from "../components/ui/button";
+
 // import "./globals.css";
 export default function ErrorPage({
   error,
