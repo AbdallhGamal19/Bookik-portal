@@ -14,9 +14,9 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import Link from "next/link";
-import Button from "@/components/ui/Button";
 
 import { TopAdvertiserUser } from "@/interface";
+import Button from "../../../components/ui/button";
 
 const TopAdvertiser = async () => {
   let data: TopAdvertiserUser[] = [];

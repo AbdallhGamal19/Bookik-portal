@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FiHome } from "react-icons/fi";
 import "./globals.css";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 
 export default function NotFound() {
   return (

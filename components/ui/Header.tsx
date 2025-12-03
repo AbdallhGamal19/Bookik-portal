@@ -11,7 +11,7 @@ import { FaEllipsisVertical } from "react-icons/fa6";
 import { FiLogOut, FiMessageCircle, FiShoppingCart, FiX } from "react-icons/fi";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { RiRobot3Fill } from "react-icons/ri";
-import Button from "./Button";
+import Button from "./button";
 import CartDrawer from "./CartDrawer";
 
 const Header: React.FC<any> = ({ className = "", username }: any) => {

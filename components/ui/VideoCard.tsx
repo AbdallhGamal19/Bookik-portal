@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { replaceHTMLTagsToText } from "@/utlis";
-import Button from "./Button";
+import Button from "./button";
 import VideoPlayer from "@/components/common/VideoPlayer";
 import { FaComment, FaHeart, FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import NoVideoAlert from "../common/videomodal/NoVideoAlert";

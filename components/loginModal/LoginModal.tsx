@@ -7,7 +7,7 @@ import { MdClose, MdLockOutline, MdOutlinePerson } from "react-icons/md";
 import { toast, ToastContainer } from "react-toastify";
 import * as Yup from "yup";
 
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import FormField from "@/components/ui/FormField";
 import { useAppContext } from "@/context/appContext";
 
