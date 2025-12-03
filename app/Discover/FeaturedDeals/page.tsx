@@ -3,6 +3,7 @@ import { IVideo } from "../../../interface";
 import VideoWithInfinityScroll from "../_components/VideoWithInfinityScroll";
 import EmptyState from "../../../components/ui/EmptyState";
 import { MdCampaign } from "react-icons/md";
+import EmptyStateWrapper from "../../../components/ui/EmptyStateWrapper";
 
 export const revalidate = 3600;
 
@@ -12,7 +13,7 @@ const FeaturedDeals = async () => {
   if (!data || data.length === 0) {
     return (
       <div className="min-h-screen bg-theme-bg-primary">
-        <EmptyState
+        <EmptyStateWrapper
           icon={MdCampaign}
           title="لا توجد عروض مميزة متاحة"
           description="عذراً، لا توجد عروض مميزة متاحة حالياً. يرجى المحاولة مرة أخرى لاحقاً أو تصفح العروض الأخرى."

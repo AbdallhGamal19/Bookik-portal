@@ -11,6 +11,16 @@ type EmptyStateProps = {
   className?: string;
 };
 
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * A component to display an empty state with an optional icon, title, description and action.
+ *
+ * @param {IconType} icon - An optional icon to display.
+ * @param {string} title - The title of the empty state.
+ * @param {string} description - A description of the empty state.
+ * @param {string} actionText - Optional action text to display a button.
+
+/*******  536e6c67-7f31-4978-8be9-0bf3e678ad5f  *******/
 export default function EmptyState({
   icon: Icon,
   title,
